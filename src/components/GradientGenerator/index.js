@@ -50,8 +50,6 @@ class GradientGenerator extends Component {
     })
   }
 
-  
-
   render() {
     const {
       firstcolor,
