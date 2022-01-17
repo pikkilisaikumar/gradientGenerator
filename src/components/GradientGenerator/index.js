@@ -1,12 +1,7 @@
 // Style your elements here
 import {Component} from 'react'
 
-import {
-  ContainerOne,
-  FirstcolorInput,
-  SecondcolorInput,
-  ParagraphText,
-} from './styledComponents'
+import {ContainerOne, FirstcolorInput, ParagraphText} from './styledComponents'
 
 import './index.css'
 
@@ -90,7 +85,7 @@ class GradientGenerator extends Component {
           </div>
           <div className="m-3">
             <p className="colorparagraph">{secondcolor}</p>
-            <SecondcolorInput
+            <FirstcolorInput
               type="color"
               onChange={this.SecondInputColor}
               color2={secondcolor}
