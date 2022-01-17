@@ -1,0 +1,14 @@
+.list-item-gradients {
+  margin: 10px;
+}
+.button1gradient {
+  border-width: 0px;
+  opacity: 1;
+}
+
+.button1gradient1 {
+  border-width: 0px;
+  background-color: #334155;
+  color: white;
+  opacity: 0.5;
+}
