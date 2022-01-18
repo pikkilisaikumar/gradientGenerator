@@ -1,4 +1,3 @@
-// Style your elements here
 import {Component} from 'react'
 
 import {ContainerOne, FirstcolorInput, ParagraphText} from './styledComponents'
@@ -45,6 +44,11 @@ class GradientGenerator extends Component {
     })
   }
 
+  valueofcolor = () => {
+    const {activeidone, firstcolorone, secondcolorone} = this.state
+    return `to ${activeidone},${firstcolorone},${secondcolorone}`
+  }
+
   render() {
     const {
       firstcolor,
@@ -56,6 +60,7 @@ class GradientGenerator extends Component {
     } = this.state
     return (
       <ContainerOne
+        datavalue={this.valueofcolor()}
         active1={activeidone}
         first={firstcolorone}
         second={secondcolorone}
